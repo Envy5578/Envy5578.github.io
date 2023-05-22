@@ -12,7 +12,7 @@ html.classList.remove("hystmodal__opened");
 window.scrollTo(0, scrollPosition);
 html.style.top = "";
 class HystModal{
-    /**
+    /*
      * При создании экземпляра класса, мы передаём в него
      * js-объект с настройками. Он становится доступен
      * в конструкторе класса в виде переменной props
