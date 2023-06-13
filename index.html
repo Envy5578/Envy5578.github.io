@@ -2,254 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <title>База данных устройств</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="/js/js.js"></script>
+    <title>Main</title>
 </head>
-
 <body>
-    <header>
-        <div class="menu"> 
-        <ul>
-            <li><a href="" class="item-audit" class="link"><img src="img/audit.svg"></a></li>
-            <li><a href="#openModal" class="item-ttx" class="link"><img src="img/ttx.svg"></a></li>
-            <li><a href="" class="item-search" class="link"><img src="img/search.svg"></a></li>
-            
-        </ul>
-        
-        </div>
-        <div >
-            <a href="" class="exit" class="link">Выход</a>
-        </div>
-        </header>
-        <div id="openModal" class="modal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3 class="modal-title">Название</h3>
-                  <a href="#close" title="Close" class="close">×</a>
-                </div>
-                <div class="modal-body">    
-                    <form action="vendor/create.php" method="post" align = "center">
-                        <p>Инв. номер</p>
-                        <input type="text" name="Inventory">
-                        <p>Описание</p>
-                        <textarea name="description"></textarea>
-                        <p>Владелец</p>
-                        <input type="text" name="Owner">
-                        <button type="submit">Добавить</button>
-                    </form>
-                </div>
-              </div>
+    <!--Тут таится модальное окно-->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Добавить Пк</h3>
+              <a href="#close" title="Close" class="close">×</a>
+            </div>
+            <div class="modal-body">    
+                <form action="vendor/create.php" method="post" align = "center">
+                    <p>Инв. номер</p>
+                    <input type="text" name="Inventory">
+                    <p>Описание</p>
+                    <textarea name="description"></textarea>
+                    <p>Владелец</p>
+                    <input type="text" name="Owner">
+                    <button type="submit">Добавить</button>
+                </form>
             </div>
           </div>
-    <div class="container">
-        <main class="main">
-            <h1 class="title"><a href="" class="link">Список компьютеров</a></h1>
-            <div >
-                <table class="console" >
-                    <tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr>
-                    <tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr><tr>
-                        <th>id</th><th>Название</th><th>Цена</th><th>Описание</th><th>***</th><th>\\\</th><th>ХХХ</th>
-                    </tr>
-                    <tr>
-                        <td>10</td><td>Товар 1</td><td>600</td>
-                        <td>Описание товара</td><td><a href=""><button>Просмотр</button></a></td><td><a href=""><button>Обновить</button></a></td><td><a href=""><button>Удалить</button></a></td>
-                
-                    </tr>
-                </table>
+        </div>
+      </div>
+    <header>
+        <div class="hat">
+<div  class="head">
+                <div class="box-1"><a href="https://astu.org/?utm_source=google.com&utm_medium=organic&utm_campaign=google.com&utm_referrer=google.com"><img src="/img/W6pmnWNvlz1ESAFUN80Np-transformed (1) (1)-min.png"></a></div>
+                <div class="box-2"><a href="#openModal"><img src="/img/add.png"></a></div>
             </div>
-            
-            <h2 class="text">
-                Таблица
-             </h2>
-            <div class="block">
-               <table class="str" border="0">
-                   <th class="example">
-                       Таблица
-                   </th>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       <tr><td>что то есть</td></tr>
-                       
-               </table>
-               </div>      
-            
-        </main>
-        
-     </div>
-
+<div class="head">
+                <div class="box-3">
+                    <input type="text" class="search-from" placeholder="Поиск">
+                </div>
+                <div class="box-4"><a><img src="/img/icons8-пользователь-мужчина-в-кружке-96-1.png"></a></div>
+            </div>
+        </div>
+    </header>
+   <div class="bone">
+        <table>
+            <tr>
+                <th>Инв. номер</th>
+                <th>Описание</th>
+                <th>Владелец</th>
+                <th>Локация</th>
+                <th>&#9998;</th>
+                <th>&#10006;</th>                
+            </tr>
+            <tr>
+                <td>М00254</td>
+                <td>Win 10</td>
+                <td></td>
+                <td></td>
+                <td><a href="vendor/delete.php?id=<?=$item[0]?>"><button>Удалить</button></a></td>
+                <td><a href="/edit/index.html"><button>Дополнительно</button></a></td>
+            </tr>
+        </table>
+    </div>
+   
+    
 </body>
-<footer>
-
-</footer>
 </html>
