@@ -97,7 +97,7 @@ input{
    }
    img{
     margin-top: 1vh;
-    width: 3vw;
+    width: 5vw;
     height: auto;
    }
    .hat{
@@ -115,7 +115,7 @@ input{
     margin-right: 1vw;
   }
   input{
-    width: 3vw;
+    width: 10vw;
     border-radius: 25px;    
   }
   .bone{
@@ -149,16 +149,17 @@ input{
     margin-bottom: 1vh;
     height: auto;
     width: 13vw;
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   td{
-    height: auto;
+    height: auto;  
     width: 13vw;   
-    font-size: 2vw;
+    font-size: 2.5vw;
+    padding-top: 10vh;
   }
   button{
     width: 10vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-radius: 10vw;
     text-align: center;
   }
@@ -175,17 +176,23 @@ input{
   }
 }
 @media screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
-  /* td{
-    margin-top: 2vh;
-  } */
+  img{
+    margin-top: 1vh;
+    width: 3vw;
+    height: auto;
+   }
   tr{
     margin-top: 4vh;
     line-height: 6vh;
-    
   }
-  table{
-    background-color: #000;
+  th{
+    font-size: 1.5vw;
   }
+  td{
+    font-size: 1.5vw;
+    line-height: 6vh;
+  }
+  
 }
 /*------------------------------------------------------------------------------------------------
 ВНИЗУ МОДАЛЬНОЕ ОКНО В ЕДИНСТВЕННОМ ЭКЗМЕПЛЯРЕ
