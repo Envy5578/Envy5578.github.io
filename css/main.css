@@ -123,10 +123,12 @@
     overflow-y: scroll;
     scroll-snap-type: none;
     height: 80vh;
+    padding: 0.5vh;
   }
   table{
+    
     margin-top: 1vh;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -170,6 +172,7 @@
   } */
   tr{
     margin-top: 4vh;
+    line-height: 6vh;
   }
 }
 /*------------------------------------------------------------------------------------------------
