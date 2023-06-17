@@ -106,7 +106,10 @@
   .box-1,.box-3{
     margin-right: 1vw;
   }
-  
+  input{
+    width: 2vw;
+    height: 3vh;
+  }
   .bone{
    
     height: 88vh;
@@ -162,11 +165,11 @@
   }
 }
 @media (hover: none) and (pointer: coarse) and (orientation: landscape) {
-  td{
+  /* td{
     margin-top: 2vh;
-  }
+  } */
   tr{
-    margin-top: 2vh;
+    margin-top: 4vh;
   }
 }
 /*------------------------------------------------------------------------------------------------
