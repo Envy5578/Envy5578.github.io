@@ -4,20 +4,20 @@ input{
 }
 @media (hover:hover) and (pointer: fine) {
   body{
-    margin: 1vw;
+    margin: 0vw;
    }
    img{
-    margin-top: 2vh;
     width: 3vw;
     height: auto;
    }
    .hat{
-      height: 7vh;
+      height: 8vh;
       display: flex;
       justify-content: space-between;
+      background-color: #53547A;
      }
     .head{
-      height: 7vh;
+      height: 8vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -40,6 +40,9 @@ input{
     width: 7vw;
     border-radius: 25px;
   }
+  .first{
+    margin-top: 5vh;
+  }
   .second{
     overflow-y: scroll;
     scroll-snap-type: none;
@@ -59,9 +62,10 @@ input{
 
   th{
     height: auto;
-    width: 13vw;
+    width: 80vw;
+    border-radius: 15px;
     font-size: 1vw;
-    
+    border: solid;
   }
   td{
     height: auto;
