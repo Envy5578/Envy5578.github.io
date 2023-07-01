@@ -1,33 +1,96 @@
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Light" ;
+  src: url(../fonts/Inter-Light.ttf);
+}
 input{
   width: 150px;
-  height: auto;
+  height: 25px;
 }
 @media (hover:hover) and (pointer: fine) {
+  .Search{
+    margin-top: 1vh;
+    font-size: 1.1vw; 
+    text-align: center;
+    background-image: url(../img/icons8-лупа-64.png);
+    background-repeat: no-repeat;
+    background-size: 2.4vh;
+    background-position: right;
+    width: 10vw;   
+}
+input{
+  border-radius: 25px;
+}
+/* .Search_button{
+    margin-top: 1vh;
+    border-radius: 1vh;
+    font-size: 1.1vw; 
+    border-radius: 0 2vh 2vh 0;
+} */
   body{
     margin: 0vw;
    }
-   img{
-    width: 3vw;
-    height: auto;
+   /*Тут добавление и профиль*/
+   .add{
+    height: 4vh;
+    width: auto;
+   }
+   /*Это работа с пикчей агту*/
+   .agtu{
+    margin-top: 1vh;
+    height: 8vh;
+    width: auto;
    }
    .hat{
       height: 8vh;
-      display: flex;
+      display: flex;      
       justify-content: space-between;
       background-color: #53547A;
      }
     .head{
-      height: 8vh;
+      height: 8vh;      
       display: flex;
       justify-content: center;
       align-items: center;
     }
+  /* .test{
+    border: solid;
+  } */
+  .pk{
+    display: flex;
+    margin-right: 35vw;
+  }
+  .pk-2{
+    margin-top: 0.5vh;
+    height: 3.2vh;
+    width: auto;
+  }
+  .pk-1{
+    padding-right: 0.3vw;
+  }
+  article{
+    font-size: 3.5vh;
+    color: #C8C1C3;
+    text-shadow: 3px 4px 8px #000;
+    /* font-weight: 550; */
+    font-family:'Bold';
+  }
   .box-1,.box-3{
     margin-right: 1vw;
   }
-  .box-1{
-    margin-left: 4vw;
+  .box-2{
+    margin-top: 1.2vh;
+    margin-right: 3vw;
   }
+  .box-1{
+    margin-left: 2vw;
+  }
+ .box-4{
+    margin-right: 2vw;
+ }
   .bone{   
     height: 88vh;
     width: auto;
@@ -35,11 +98,9 @@ input{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    border: solid;
   } 
-  input{
-    width: 7vw;
-    border-radius: 25px;
-  }
+  
   .first{
     margin-top: 5vh;
   }
@@ -49,38 +110,45 @@ input{
     height: 80vh;
   }
   table{
-    margin-top: 1vh;
+    margin-top: 5vh;
     width: 80vw;
-    display: flex;    
-    justify-content: center;
+    display: block;    
+    justify-content: space-between;
     text-align: center;
     line-height: 7vh;
     border: solid;
     border-radius: 15px;
-    
-  }
+    font-family: 'Light';
+    border-collapse:collapse ;
 
+    }
+    thead th {
+      position: sticky;
+      top: 0;
+      background: white;
+    }
   th{
     height: auto;
+    border-bottom: 2px solid #6678b1;
     width: 80vw;
-    border-radius: 15px;
     font-size: 1vw;
-    border: solid;
+    
   }
   td{
     height: auto;
-    width: 13vw;   
+    width: 80vw;   
     font-size: 1vw;
+        
   }
   
-  button{
-    width: 10vw;
+  .change{
+    width: auto;
     font-size: 1vw;
     border-radius: 10vw;
     text-align: center;
   }
   tr:hover {
-    background-color: aqua;
+    background-color: #40428848;
   }
   .second::-webkit-scrollbar{
     width: auto;
