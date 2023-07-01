@@ -93,7 +93,6 @@ input{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: solid;
   } 
   
   .first{
@@ -165,13 +164,15 @@ input{
    }
    .Search{
     margin-top: 1vh;
-    font-size: 0.2vw; 
+    font-size: 0.1vw; 
     text-align: center;
     background-image: url(../img/icons8-лупа-64.png);
     background-repeat: no-repeat;
     background-size: 2.4vh;
     background-position: right;
-    width: 15vw;   
+    width: 20vw;   
+    
+   
 }
    /* img{
     margin-top: 1vh;
@@ -224,10 +225,7 @@ input{
   .pk-1{
     padding-right: 0.3vw;
   }
-  input{
-    width: 15vw;
-    border-radius: 25px;    
-  }
+  
   article{
     font-size: 2.5vw;
     color: #C8C1C3;
