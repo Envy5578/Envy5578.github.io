@@ -162,15 +162,26 @@ input{
   body{
     margin: 1vw;
    }
-   img{
+   .Search{
+    margin-top: 1vh;
+    font-size: 1.1vw; 
+    text-align: center;
+    background-image: url(../img/icons8-лупа-64.png);
+    background-repeat: no-repeat;
+    background-size: 2.4vh;
+    background-position: right;
+    width: 10vw;   
+}
+   /* img{
     margin-top: 1vh;
     width: 5vw;
     height: auto;
-   }
+   } */
    .hat{
       height: 7vh;
       display: flex;
       justify-content: space-between;
+      background-color: #53547A;
      }
     .head{
     height: 7vh;
@@ -178,12 +189,40 @@ input{
       justify-content: center;
       align-items: center;
     }
+    .add{
+      height: 4vh;
+      width: auto;
+     }
+    .agtu{
+      margin-top: 1vh;
+      height: 8vh;
+      width: auto;
+     }
   .box-1,.box-3{
     margin-right: 1vw;
+  }
+  .pk{
+    display: flex;
+    margin-right: 35vw;
+  }
+  .pk-2{
+    margin-top: 0.5vh;
+    height: 3.2vh;
+    width: auto;
+  }
+  .pk-1{
+    padding-right: 0.3vw;
   }
   input{
     width: 15vw;
     border-radius: 25px;    
+  }
+  article{
+    font-size: 3.5vh;
+    color: #C8C1C3;
+    text-shadow: 3px 4px 8px #000;
+    /* font-weight: 550; */
+    font-family:'Bold';
   }
   .bone{
    
@@ -204,14 +243,20 @@ input{
     
     margin-top: 1vh;
     width: 90vw;
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
     border: solid;
     border-radius: 15px;
     line-height: 3vh;
+    font-family: 'Light';
+    border-collapse:collapse ;
   }
-  
+  thead th {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
   th{
     margin-bottom: 1vh;
     height: auto;
@@ -223,7 +268,7 @@ input{
     width: 13vw;   
     font-size: 2.5vw;    
   }
-  button{
+  .change{
     width: 10vw;
     font-size: 1.5vw;
     border-radius: 10vw;
