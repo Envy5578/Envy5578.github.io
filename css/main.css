@@ -165,13 +165,13 @@ input{
    }
    .Search{
     margin-top: 1vh;
-    font-size: 0.5vw; 
+    font-size: 0.2vw; 
     text-align: center;
     background-image: url(../img/icons8-лупа-64.png);
     background-repeat: no-repeat;
     background-size: 2.4vh;
     background-position: right;
-    width: 10vw;   
+    width: 15vw;   
 }
    /* img{
     margin-top: 1vh;
@@ -218,7 +218,7 @@ input{
   }
   .pk-2{
     margin-top: 0.5vh;
-    height: 1.2vh;
+    height: 2vh;
     width: auto;
   }
   .pk-1{
@@ -229,7 +229,7 @@ input{
     border-radius: 25px;    
   }
   article{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     color: #C8C1C3;
     text-shadow: 3px 4px 8px #000;
     /* font-weight: 550; */
