@@ -164,7 +164,7 @@ input{
    }
    .Search{
     margin-top: 1vh;
-    font-size: 0.1vw; 
+    height: 3vh; 
     text-align: center;
     background-image: url(../img/icons8-лупа-64.png);
     background-repeat: no-repeat;
@@ -242,16 +242,13 @@ input{
     justify-content: flex-start;
     align-items: center;
   }
-  .second{
+ 
+  table{
     overflow-y: scroll;
     scroll-snap-type: none;
-    height: 80vh;
-    padding: 0.5vh;
-  }
-  table{
-    
+    height: 70vh;
     margin-top: 1vh;
-    width: 90vw;
+    width: 70vw;
     display: block;
     justify-content: center;
     text-align: center;
