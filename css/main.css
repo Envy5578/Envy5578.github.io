@@ -170,8 +170,8 @@ input{
     background-repeat: no-repeat;
     background-size: 2.4vh;
     background-position: right;
-    width: 20vw;   
-    
+    width: 25vw;   
+    border-radius: 25px;
    
 }
    /* img{
@@ -246,9 +246,9 @@ input{
   table{
     overflow-y: scroll;
     scroll-snap-type: none;
-    height: 70vh;
+    height: 80vh;
     margin-top: 1vh;
-    width: 70vw;
+    width: 90vw;
     display: block;
     justify-content: center;
     text-align: center;
