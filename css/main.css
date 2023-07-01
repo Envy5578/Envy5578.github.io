@@ -67,7 +67,7 @@ input{
     padding-right: 0.3vw;
   }
   article{
-    font-size: 3.5vh;
+    font-size: 1.5vw;
     color: #C8C1C3;
     text-shadow: 3px 4px 8px #000;
     /* font-weight: 550; */
@@ -190,12 +190,12 @@ input{
       align-items: center;
     }
     .add{
-      height: 4vh;
+      height: 2vh;
       width: auto;
      }
     .agtu{
       margin-top: 1vh;
-      height: 8vh;
+      height: 3vh;
       width: auto;
      }
   .box-1,.box-3{
@@ -203,11 +203,11 @@ input{
   }
   .pk{
     display: flex;
-    margin-right: 35vw;
+    margin-right: 3vw;
   }
   .pk-2{
     margin-top: 0.5vh;
-    height: 3.2vh;
+    height: 1.2vh;
     width: auto;
   }
   .pk-1{
@@ -218,7 +218,7 @@ input{
     border-radius: 25px;    
   }
   article{
-    font-size: 3.5vh;
+    font-size: 1.5vw;
     color: #C8C1C3;
     text-shadow: 3px 4px 8px #000;
     /* font-weight: 550; */
