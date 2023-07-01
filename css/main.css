@@ -242,7 +242,11 @@ input{
     justify-content: flex-start;
     align-items: center;
   }
- 
+ .profile{
+  margin-top: 0.2vh;
+  height: 3vh;
+  width: auto;
+ }
   table{
     overflow-y: scroll;
     scroll-snap-type: none;
