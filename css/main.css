@@ -121,6 +121,7 @@ input{
       position: sticky;
       top: 0;
       background: white;
+      border-bottom: solid;
     }
   th{
     height: auto;
@@ -164,7 +165,7 @@ input{
    }
    .Search{
     margin-top: 1vh;
-    font-size: 1.1vw; 
+    font-size: 0.5vw; 
     text-align: center;
     background-image: url(../img/icons8-лупа-64.png);
     background-repeat: no-repeat;
@@ -200,6 +201,16 @@ input{
      }
   .box-1,.box-3{
     margin-right: 1vw;
+  }
+  .box-1{
+    margin-left: 1vw;
+  }
+  .box-4{
+    margin-right: 1vw;
+  }
+  .box-2{
+    margin-top: 1.2vh;
+    margin-right: 3vw;
   }
   .pk{
     display: flex;
@@ -256,16 +267,17 @@ input{
     position: sticky;
     top: 0;
     background: white;
+    border-bottom: solid;
   }
   th{
     margin-bottom: 1vh;
     height: auto;
-    width: 13vw;
+    width: 80vw;
     font-size: 2.5vw;
   }
   td{
     height: auto;  
-    width: 13vw;   
+    width: 80vw;   
     font-size: 2.5vw;    
   }
   .change{
