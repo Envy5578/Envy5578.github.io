@@ -159,9 +159,7 @@ input{
 }
 /*-------------------------------------------------------------------------------------------------------*/
 @media (hover: none) and (pointer: coarse) {
-  body{
-    margin: 1vw;
-   }
+  
    .Search{
     margin-top: 1vh;
     height: 2vh; 
@@ -250,7 +248,7 @@ input{
   table{
     overflow-y: scroll;
     scroll-snap-type: none;
-    height: 85vh;
+    height: 80vh;
     margin-top: 1vh;
     width: 90vw;
     display: block;
