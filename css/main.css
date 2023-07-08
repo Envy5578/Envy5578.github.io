@@ -6,20 +6,124 @@
   font-family: "Light" ;
   src: url(../fonts/Inter-Light.ttf);
 }
+/*------------------------------------------------------------------
+---------------------------------------------------------------
+Бургер для иконки*/
+/* .profile{
+  display: flex;
+  position: relative;
+  margin-right: 1vw;
+  margin-left: 2vw;
+}
+.menu-btn{
+  position: absolute;
+  background-color: #55af39;
+  top: 2%;
+  right: -0.2%;
+  width: 2.5vw;
+  height: 3vh;
+  border: solid;
+  z-index: 0;
+  visibility: hidden;
+}
+.menu-btn span{
+  width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+.menu-btn1{
+  position: relative;
+  z-index: 5;
+  visibility: hidden;
+} */
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1vh;
+  font-family: 'Bold';
+  text-align: center; 
+}
+
+li ul{
+  display: none;
+  position: absolute;
+  
+  width: 8vw; 
+  height: auto;
+}
+
+.profile{
+  display: flex;
+  /* position: absolute; */
+  margin-top: 0.3vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  
+}
+.helper li{
+  /* border: solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2vh;
+  width: 8vw;
+  background-color: #ffffff;
+  border-radius: 25px;
+  /* width: auto;
+  margin-right: 3px; */
+}
+.helper{
+  right: 1;
+  position: absolute;
+}
+li .exit{
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color:#000;
+  /* background-color: #000; */
+  border-radius: 25px;
+  
+}
+.helper li:hover{
+  background-color: #6678b1;
+}
+li:hover .helper{
+  display: block;
+}
+
+/*------------------------------------------------------------------
+-------------------------------------------------------*/
 input{
   width: 150px;
   height: 25px;
 }
 @media (hover:hover) and (pointer: fine) {
+  /* body{
+    margin: 0;
+  } */
   .Search{
     margin-top: 1vh;
-    font-size: 1.1vw; 
+    font-size: 1.5vh; 
+    line-height: 2vh;
     text-align: center;
     background-image: url(../img/icons8-лупа-64.png);
     background-repeat: no-repeat;
     background-size: 2.4vh;
     background-position: right;
-    width: 10vw;   
+    width: 10vw;  
+    height: auto; 
 }
 input{
   border-radius: 25px;
@@ -31,6 +135,10 @@ input{
    /*Тут добавление и профиль*/
    .add{
     height: 4vh;
+    width: auto;
+   }
+   .profile{
+    height: 6vh;
     width: auto;
    }
    /*Это работа с пикчей агту*/
@@ -85,6 +193,7 @@ input{
   }
  .box-4{
     margin-right: 2vw;
+    margin-top: 0.5vh;
  }
   .bone{   
     height: 88vh;
@@ -157,7 +266,7 @@ input{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
   }
 }
-/*-------------------------------------------------------------------------------------------------------*/
+/*----адаптивка для мобилки---------------------------------------------------------------------------------------------------*/
 @media (hover: none) and (pointer: coarse) {
   
    .Search{
@@ -248,7 +357,7 @@ input{
   table{
     overflow-y: scroll;
     scroll-snap-type: none;
-    height: 80vh;
+    height: 100vh;
     margin-top: 1vh;
     width: 90vw;
     display: block;
@@ -278,13 +387,15 @@ input{
     font-size: 2.5vw;    
   }
   .change{
-    width: 10vw;
-    font-size: 1.5vw;
+    width: auto;
+    height: auto;
+    font-size: 2vw;
     border-radius: 10vw;
     text-align: center;
+    font-family: 'Bold';
   }
   .second::-webkit-scrollbar{
-    width: auto;
+    width: 2vw;
   }
   .second::-webkit-scrollbar-track{
     border: darkgrey;
@@ -292,10 +403,38 @@ input{
   }
   .second::-webkit-scrollbar-thumb{
     border-radius: 15px;
+    
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
   }
 }
 @media screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
+  .change{
+    height: 5vh;
+    font-size: 3vh;
+    width: auto;
+  }
+  .agtu{
+  height: 7vh;
+ }
+ .logo{
+  margin-right: -20%;
+ }
+  .Search{
+    width: 13vw;
+  }
+  .add{
+    height: 4vh;
+    width: auto;
+  }
+  .pk-2{
+    position: relative;
+    height: 4vh;
+    width: auto;
+    top: 3px;
+  }
+  .profile{
+    bottom: 0.2vh;
+  }
   img{
     margin-top: 1vh;
     width: 3vw;
@@ -316,6 +455,8 @@ input{
     width: 10vw;
   }  
 }
+
+
 /*------------------------------------------------------------------------------------------------
 ВНИЗУ МОДАЛЬНОЕ ОКНО В ЕДИНСТВЕННОМ ЭКЗМЕПЛЯРЕ
 /* свойства модального окна по умолчанию */
